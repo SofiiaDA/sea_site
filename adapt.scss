@@ -1,0 +1,1031 @@
+@media screen and (max-width: 1125px){
+    .nav{
+        width:900px;
+        &__logo{
+            height: 1.1em;
+        }
+        .nav-ul{
+            &__link{
+                font-size: 16px;
+            }
+        }
+        .nav-li{
+            padding-top: 10px;
+        }
+        .media {
+            & a{
+                width: 4.5ex;
+                height: 4.5ex;
+                &::before {
+                    width: 4.5ex;
+                    height: 4.5ex;
+                } 
+            }
+        }
+    }
+
+
+    .ocean-container{
+        &-text{
+            width: 900px;
+        }
+        .shop{
+            width: 900px;
+            &-pic{
+                background: linear-gradient(127deg, rgba(0,210,255,1) 0%, rgba(15,210,255,1) 50%, rgba(255,255,255,1) 50%);
+                &__picture{
+                    height: 350px;
+                    width: 250px;
+                }
+                &-other{
+                    &__products{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+            &-description{
+                &-title{
+                    .stars{
+                        .butons{
+                            width: 5em;
+                            right: -5.5%;
+                            top: 109px;
+                            &__left, &__right{
+                                width: 2.5em;
+                                height: 2.5em;
+                            }
+                            &__left::before{
+                                width: 2.5em;
+                                height: 2.5em;
+                            }
+                            &__right::before{
+                                width: 2.5em;
+                                height: 2.5em;
+                            }
+                        }
+                    }
+                }
+                &-menu{
+                    margin-top: 5%;
+                    font-size: 16px;
+                }
+                &-about-the-product{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+    .about-us{
+        &-text-box{
+            width: 500px;
+            height: 260px;
+            padding: 70px 0% 70px 40px;
+        }
+        &__video{
+            width: 400px;
+            height: 250px;
+            left: 450px;
+        }
+    }
+
+
+    
+    
+    .all-team{
+        width: 900px;
+        height: 300px;
+    }
+    .team{
+        height: 250px;
+        width: 240px;
+        &__foto{
+            width: 5.5em;
+            height:5.5em;
+        }
+        &__name{
+            font-size: 1em;
+        }
+        &__soc{
+            font-size: 0.8em;
+        }
+        &__place{
+            & .city{
+                font-size: 0.8em;
+            }
+        }
+    }
+    #n1{
+        left: 10px;
+        top: -25px;
+    }
+    #n2{
+        left: 220px;
+        z-index: 5;
+    }
+    #n3{
+        right: 230px;
+        top: -25px;
+    }
+    #n4{
+        right: 10px;
+        z-index: 5;
+    }
+
+    .navigation1, .navigation2{
+        display: none;
+    }
+
+    .news{
+        .news-blok-container{
+            width: 900px;
+            height: 350px;
+        }
+        .news-blok{
+            &__text{
+                font-size: 14px;
+            }
+            &__butn{
+                & button{
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .media-container-white{
+            .media-info{
+                width: 900px;
+            }
+            .media-container-facebook{
+                width: 350px;
+                height: 200px;
+            }
+        }
+        .media-container-black{
+            .media-info-black{
+                width: 900px;
+                height: 100%;
+            }
+            &-info{
+                width: 500px;
+                right: 0;
+                &-menu{
+                    width: 100%;
+                    margin-bottom: 10%;
+                    & ul{
+                        & li{
+                            padding-top: 5%;
+                            & span{
+                                color: rgb(242, 216, 0);
+                                font-weight: 800;
+                                margin-right: 5%;
+                            }
+                            & a{
+                                color: white;
+                                text-decoration: none;
+                                &:hover, :active{
+                                    color: #00affe;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-contact{
+                    width: 100%;
+                    &__title{
+                        color: white;
+                        font-weight: 800;
+                        font-size: 1.2em;
+                        margin-bottom: 2%;
+                    }
+                    &-input{
+                        width: 100%;
+                        &__mail{
+                            width: 3em;
+                            height: 3em;
+                            border-radius: 50%;
+                        }
+                        &__send{
+                            width: 2em;
+                            height: 2em;
+                            border-radius: 50%;
+                            display: block;
+                            margin-top: 2%;
+                        }
+                        & input{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 904px){
+    .nav{
+        display:inline;
+        position: relative;
+        width: 800px;
+        &__logo{
+            position: absolute;
+            top: 25%;
+        }
+        &-media{
+            position: absolute;
+            bottom: 0;
+            left: 1.5%;
+        }
+    }
+
+    .nav-menu{
+        background-color:#00affe;
+        min-height: 100vh;
+        width:101%;
+        position:fixed;
+        left: -1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        transform:translate(100%, 0%);
+        top: 7em;
+        transition: transform .4s, top .5s;
+    }
+    .nav-menu._active{
+        transform:translate(0%, 0%);
+    }
+    .nav-ul{
+        position:fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 12em;
+        &__link{
+            color: white;
+        }
+    }
+    .nav-li{
+        line-height: 5;
+        color: white;
+        margin-top: 30px;
+    }
+    .nav-icon {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        transition-duration: 1s;
+        cursor: pointer;
+        background-color: black;
+    }
+    .nav-icon span {
+        height: 4px;
+        width: 30px;
+        top: 50%;
+        left: 25%;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        transition-duration: .25s;
+        transition-delay: .25s;
+    }
+    .nav-icon span:before {
+        left: 0;
+        position: absolute;
+        top: -10px;
+        height: 4px;
+        width: 30px;
+        background-color: white;
+        content: "";
+        border-radius: 20px;
+        transition-duration: .25s;
+        transition: transform .25s, top .25s .25s;
+    }
+    .nav-icon span:after {
+        left: 0;
+        position: absolute;
+        top: 10px;
+        height: 4px;
+        width: 30px;
+        background-color: white;
+        content: "";
+        border-radius: 20px;
+        transition-duration: .25s;
+        transition: transform .25s, top .25s .25s;
+    }
+    .nav-icon._active span {
+        transition-duration: 0.1s;
+        transition-delay: .25s;
+        background: transparent;
+    }
+    .nav-icon._active span:before {
+        transition: top .25s, transform .25s .25s;
+        top: 0px;
+        transform: rotateZ(-45deg);
+    }
+    .nav-icon._active span:after {
+        transition: top 0.4s, transform .25s .25s;
+        top: 0px;
+        transform: rotateZ(45deg);
+    }
+
+
+    .ocean-container{
+        width: 100%;
+        height: 1500px;
+        margin-bottom: 5%;
+        &-text{
+            width: 800px;
+        }
+        .shop{
+            width: 800px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &-pic{
+                width: 100%;
+                height: 500px;
+                position: relative;
+                top: 0;
+                background: linear-gradient(148deg, rgba(0,210,255,1) 0%, rgba(15,210,255,1) 50%, rgba(255,255,255,1) 50%);
+                &__picture{
+                    height: 400px;
+                    width: 300px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-80%, -50%);
+                }
+                &-other{
+                    height: 90%;
+                }
+            }
+            &-description{
+                width: 100%;
+                height: 500px;
+                .title{
+                    font-size: 100px;
+                }
+                &-title{
+                    width: 90%;
+                    padding-top: 3%;
+                    margin: auto;
+                    position: relative;
+                    .stars{
+                        .butons{
+                            width: 8em;
+                            right: -5.5%;
+                            top: 101px;
+                            &__left, &__right{
+                                width: 4em;
+                                height: 2em;
+                            }
+                            &__left::before{
+                                width: 4em;
+                                height: 2em;
+                                background-size:40%;
+                            }
+                            &__right::before{
+                                width: 4em;
+                                height: 2em;
+                                background-size:40%;
+                            }
+                        }
+                    }
+                }
+                &-menu{
+                    width: 100%;
+                }
+                &-about-the-product{
+                    width: 90%;
+                    height: 200px;
+                }
+                &-order{
+                    margin-top: 2%;
+                    &__butn{
+                        width: 30%;
+                        height: 50px;
+                        font-size: 16px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-us{
+        width: 100%;
+        height: 750px;
+        position: relative;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__picture{
+            display: none;
+        }
+        &-text-box{
+            position: static;
+            width: 800px;
+            background-color: white;
+            padding: 0;
+            &__butn{
+                text-align: center;
+            }
+        }
+
+        &__video{
+            position: static;
+            width: 500px;
+            height: 300px;
+            margin-top: 5%;
+        }
+    }
+
+
+    .our-team{
+        height: 800px;
+    }
+    .all-team{
+        width: 800px;
+        height: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 5%;
+    }
+    .team{
+        position:static;
+        height: 250px;
+        width: 35%;
+        font-size: 1em;
+        &__foto{
+            width: 7em;
+            height:7em;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        &__name{
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+        &__symb{
+            font-weight: 800;
+        }
+        &__place{
+            & .pic{
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+
+    .news{
+        .news-blok-container{
+            width: 800px;
+            height: 350px;
+            margin: auto;
+            display: flex;
+            justify-content:space-around;
+        }
+    } 
+
+    footer{
+        width: 100%;
+        height: 1000px;
+        background-color: black;
+        .media-container-white{
+            width: 100%;
+            height: 70%;
+            .media-info{
+                width: 800px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .media-container-inst{
+                position: static;
+                width: 100%;
+                &-picture{
+                    width: 100%;
+                    height: 200px;
+                    &__photo{
+                        width: 25%;
+                        height: 100%;
+                    }
+                }
+                &-black{
+                    background-color: white;
+                    text-align: center;
+                } 
+            }
+            .media-container-facebook{
+                position: static;
+                margin-top: 5%;
+            }
+        }
+        .media-container-black{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .media-info-black{
+                width: 800px;
+                height: 100%;
+                position: static;
+                display: flex;
+                justify-content: center;
+            }
+            &-info{
+                width: 500px;
+                position: static;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nav{
+        width: 700px;
+    }
+
+    .ocean-container{
+        &-text{
+            width: 700px;
+        }
+        .shop{
+            width: 700px;
+        }
+    }
+    
+    .about-us{
+        &-text-box{
+            width: 700px;
+        }
+    }
+
+    .all-team{
+        width: 700px;
+    }
+    
+
+    .news{
+        .news-blok-container{
+            width: 700px;
+        }
+    } 
+
+    footer{
+        .media-container-white{
+            .media-info{
+                width: 700px;
+            }
+        }
+        .media-container-black{
+            .media-info-black{
+                width: 700px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .nav{
+        width: 600px;
+    }
+
+    .ocean-container{
+        width: 100%;
+        height: 1500px;
+        margin-bottom: 5%;
+        &-text{
+            width: 600px;
+            &__title{
+                font-size: 5ex;
+            }
+        }
+        .shop{
+            width: 600px;
+            &-description{
+                &-order{
+                    &__butn{
+                        width: 25%;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-us{
+        height: 800px;
+        &-text-box{
+            width: 600px;
+            height: 320px;
+            &__title{
+                padding-top: 5%;
+            }
+        }
+    }
+
+
+    .our-team{
+        height: 1300px;
+    }
+    .all-team{
+        width: 600px;
+        height: 1100px;
+    }
+    .team{
+        height: 250px;
+        width: 60%;
+    }
+
+    .news{
+        height: 1300px;
+        .news-blok-container{
+            width: 600px;
+            height: 1000px;
+            flex-wrap: wrap;
+            .news-blok{
+                width: 90%;
+                height: 30%;
+            }
+        }
+    } 
+
+    footer{
+        .media-container-white{
+            .media-info{
+                width: 600px;
+            }
+        }
+        .media-container-black{
+            .media-info-black{
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nav{
+        width: 500px;
+        &-media{
+            left: 2.5%;
+        }
+    }
+
+    .ocean-container{
+        &-text{
+            width: 500px;
+        }
+        .shop{
+            width: 500px;
+            &-description{
+                &-menu{
+                    width: 100%;
+                }
+                &-about-the-product{
+                    width: 90%;
+                    height: 220px;
+                }
+                &-order{
+                    &__butn{
+                        width: 30%;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-us{
+        height: 800px;
+        &__text{
+            font-size: 90px;
+        }
+        &-text-box{
+            width: 500px;
+            height: 320px;
+            &__title{
+                padding-top: 5%;
+            }
+        }
+    }
+    .our-team{
+        &__text{
+            font-size: 90px;
+        }
+    }
+    .all-team{
+        width: 500px;
+    }
+
+    .news{
+        height: 1300px;
+        .news-blok-container{
+            width: 500px;
+            height: 1000px;
+            flex-wrap: wrap;
+            .news-blok{
+                width: 80%;
+            }
+        }
+    } 
+
+    footer{
+        .media-container-white{
+            .media-info{
+                width: 500px;
+            }
+        }
+        .media-container-black{
+            .media-info-black{
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav{
+        width: 400px;
+    }
+
+    .ocean-container{
+        height: 1600px;
+        &-text{
+            width: 400px;
+        }
+        .shop{
+            width: 400px;
+            height: 1050px;
+            &-pic{
+                background: linear-gradient(130deg, rgba(0,210,255,1) 0%, rgba(15,210,255,1) 50%, rgba(255,255,255,1) 50%);
+                &__picture{
+                    height: 300px;
+                    width: 200px;
+                }
+                &-other{
+                    &__products{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+            &-description{
+                height: 600px;
+                &-title{
+                    .stars{
+                        .number2{
+                            top: 120px;
+                        }
+                        .butons{
+                            top: 90px;
+                        }
+                    }
+                }
+                &-about-the-product{
+                    font-size: 14px;
+                }
+                &-menu{
+                    width: 100%;
+                }
+                &-about-the-product{
+                    width: 90%;
+                    height: 300px;
+                }
+                &-order{
+                    &__butn{
+                        width: 30%;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-us{
+        height: 750px;
+        &__text{
+            font-size: 70px;
+        }
+        &-text-box{
+            width: 400px;
+            height: 350px;
+        }
+        &__video{
+            position: static;
+            width: 400px;
+            height: 250px;
+        }
+    }
+
+    .our-team{
+        &__text{
+            font-size: 70px;
+        }
+    }
+    .all-team{
+        width: 400px;
+    }
+
+    .news{
+        height: 1300px;
+        .news-blok-container{
+            width: 400px;
+        }
+    } 
+
+    footer{
+        height: 1000px;
+            .media-container-white{
+                .media-info{
+                    width: 400px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .media-container-inst{
+                    &-picture{
+                        width: 100%;
+                        height: 400px;
+                        &__photo{
+                            width: 50%;
+                            height: 50%;
+                        }
+                    }
+                }
+                .media-container-facebook{
+                    display: none;
+                }
+            }
+            .media-container-black{
+                .media-info-black{
+                    width: 400px;
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 400px){
+    .nav{
+        width: 320px;
+        &__logo{
+            left: 3%;
+            top: 25%;
+        }
+        &-media{
+            bottom: 0;
+            left: 4%;
+        }
+        &-icon{
+            right: 3%;
+        }
+    }
+
+    .ocean-container{
+        height: 1600px;
+        &-text{
+            width: 320px;
+            &__title{
+                font-size: 4ex;
+            }
+            &__text{
+                font-size: 2.5ex;
+            }
+        }
+
+        .shop{
+            width: 320px;
+            height: 1100px;
+            &-pic{
+                background: linear-gradient(130deg, rgba(0,210,255,1) 0%, rgba(15,210,255,1) 50%, rgba(255,255,255,1) 50%);
+                &__picture{
+                    height: 300px;
+                    width: 200px;
+                    left: 55%;
+                }
+                &-other{
+                    left: 85%;
+                    &__products{
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+            }
+            &-description{
+                height: 600px;
+                &-about-the-product{
+                    font-size: 12px;
+                    width: 100%;
+                }
+                &-order{
+                    width: 100%;
+                    &__butn{
+                        width: 45%;
+                        height: 50px;
+                        margin-top: 7%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-us{
+        height: 750px;
+        &__text{
+            font-size: 50px;
+        }
+        &-text-box{
+            width: 320px;
+            height: 350px;
+            &__title{
+                font-size: 18px;
+            }
+            &__cross{
+                font-size: 18px;
+            }
+            &__text{
+                font-size: 14px;
+            }
+        }
+        &__video{
+            width: 320px;
+        }
+    }
+
+    .our-team{
+        &__text{
+            font-size: 50px;
+        }
+    }
+    .all-team{
+        width: 320px;
+    }
+
+    .news{
+        height: 1300px;
+        .news-blok-container{
+            width: 320px;
+        }
+    } 
+
+    footer{
+        height: 1000px;
+            .media-container-white{
+                .media-info{
+                    width: 320px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .media-container-inst{
+                    &__title{
+                        font-size: 50px;
+                    }
+                }
+            }
+            .media-container-black{
+                .media-info-black{
+                    width: 320px;
+                }
+                &-info{
+                    &-menu{
+                        & ul{
+                            padding-left: 10%;
+                        }
+                    }
+                    &-contact{
+                        width: 100%;
+                        &__title{
+                            text-align: center;
+                        }
+                        &-input{
+                            &__send{
+                                height: 1.7em;
+                                margin-top: 2.5%;
+                            }
+                        }
+                    }
+                }
+            }
+            .media-container-black-info-contact-input__send::before{
+                width: 2em;
+                height: 1.7em;
+                background-size:51%;
+            }
+        }
+}
